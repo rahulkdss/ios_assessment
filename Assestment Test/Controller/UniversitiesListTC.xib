@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UniversitiesListTC" rowHeight="98" id="KGk-i7-Jjw" customClass="UniversitiesListTC" customModule="Assestment_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYs-Hu-m5K">
+                        <rect key="frame" x="274" y="34" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Gm3-hg-drf"/>
+                            <constraint firstAttribute="width" secondItem="UYs-Hu-m5K" secondAttribute="height" multiplier="1:1" id="Zhb-Qu-ZYb"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="info.circle.fill" catalog="system"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kc9-y7-TOr">
+                        <rect key="frame" x="16" y="15.999999999999998" width="242" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xz-8k-Fpy">
+                        <rect key="frame" x="24" y="44.333333333333336" width="234" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Kc9-y7-TOr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Crx-F9-TO7"/>
+                    <constraint firstItem="UYs-Hu-m5K" firstAttribute="leading" secondItem="4xz-8k-Fpy" secondAttribute="trailing" constant="16" id="EjA-7v-uXj"/>
+                    <constraint firstItem="UYs-Hu-m5K" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Gvy-rN-iLQ"/>
+                    <constraint firstItem="Kc9-y7-TOr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="fFR-as-a25"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4xz-8k-Fpy" secondAttribute="bottom" constant="16" id="hX8-9h-zaC"/>
+                    <constraint firstAttribute="trailing" secondItem="UYs-Hu-m5K" secondAttribute="trailing" constant="16" id="lcX-Ww-HD5"/>
+                    <constraint firstItem="UYs-Hu-m5K" firstAttribute="leading" secondItem="Kc9-y7-TOr" secondAttribute="trailing" constant="16" id="sdY-Q1-xpE"/>
+                    <constraint firstItem="4xz-8k-Fpy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="tlp-LU-cjY"/>
+                    <constraint firstItem="4xz-8k-Fpy" firstAttribute="top" secondItem="Kc9-y7-TOr" secondAttribute="bottom" constant="8" id="u4W-bY-BuY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnDetails" destination="UYs-Hu-m5K" id="wtx-T4-4wN"/>
+                <outlet property="lblUniversityName" destination="Kc9-y7-TOr" id="mX2-7C-4rZ"/>
+                <outlet property="lblUniversityState" destination="4xz-8k-Fpy" id="vqY-8k-T45"/>
+            </connections>
+            <point key="canvasLocation" x="45.801526717557252" y="39.436619718309863"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="info.circle.fill" catalog="system" width="128" height="123"/>
+    </resources>
+</document>
